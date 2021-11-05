@@ -1,0 +1,84 @@
+body{
+    background-color: #CCCECC;
+    font-size: 1.5rem;
+    text-align: justify;
+    display: block;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    padding: 0em 3em 0em 3em;
+}
+#acceso{
+    
+    background-color: #FCFEFC;
+float: left;
+margin-left: -130px;
+padding: 10px;
+margin-top: 30px;
+
+
+}
+#titulo{
+
+   float: right;
+
+   text-transform: uppercase;
+   margin-top: 0px;
+
+}
+
+
+section{
+    
+    display: inline-block;
+}
+
+h3{
+    background-color: #808080;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+  
+
+}
+p{
+    padding: 12px;
+}
+#que,#posturas,#quien{
+  
+    background-color: #E6E6E6;
+    border-radius: 5px;
+  
+}
+#negacionistas,#optimistas,#alarmados,#madmaxistas{
+    background-color: white;
+    padding:0px 0px 10px 0px ;
+}
+
+h4{
+    background-color: #B4B2B4;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+  
+}
+img{
+  text-align: center;  
+   
+}
+hr{
+    background-color: yellow;
+    width: 700px;
+    height: 5px;
+    
+}
+
+strong{
+    border-bottom: black solid 2px;
+}
+em{
+    color: red;
+}
+#negacionistas p{
+    padding: 0px 10px 10px 10px;
+}
