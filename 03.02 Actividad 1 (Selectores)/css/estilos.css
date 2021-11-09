@@ -1,7 +1,127 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+	font-family: "FontAwesome";
+	font-weight: 400px;
+	font-style : normal;
+		   src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+		   src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+				 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+				 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+				 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+				 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+	}
+
+
+
 body{
 
     background-color: #D3D3D3;
 }
+
 h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight:600;
+}
+
+nav{
+    text-align: center;
     
 }
+a{
+
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navegacion{
+    display:inline-flex;
+    width: 120px;
+    height: 120px;
+    margin: 130px;
+}
+
+a[rel='next']::before{
+	font-family:"FontAwesome";
+	background:url(/img/plus-circle.svg) no-repeat;
+
+
+
+}
+a[rel='next']::before{
+	font-family: "FontAwesome";
+	content:"\f055" ;
+}
+
+a[rel='tag']::before{
+	font-family: "FontAwesome";
+	content: "\f07a";
+}
+
+a[rel='bookmark']::before{
+	font-family: "FontAwesome";
+	content: "\f005";
+}
+
+a[rel='help']::before{
+	font-family: "FontAwesome";
+	content: "\f1c1";
+}
+
+a[rel='search']::before{
+	font-family: "FontAwesome";
+	content: "\f002";
+}
+
+a[rel='nofollow']::before{
+	font-family: "FontAwesome";
+	content: "\f3ed";
+}
+
+
+
+

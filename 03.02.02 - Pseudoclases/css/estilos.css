@@ -1,0 +1,34 @@
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+h1 + h2 {
+    color: red;
+   }
+   
+   p + h2::first-letter  {
+       color: red;
+   }
+
+    .item:nth-child(3){
+       color: green;
+       
+   }
+
+   .item:hover:nth-child(3){
+        background-color: red;
+   }
