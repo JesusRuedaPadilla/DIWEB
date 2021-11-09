@@ -29,6 +29,6 @@ h1 + h2 {
        
    }
 
-   .item:hover:nth-child(3){
-        background-color: red;
-   }
+   li:nth-child(1):hover::before{
+    content:"Somos elementos impares";
+}
