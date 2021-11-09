@@ -14,7 +14,10 @@ table {
 	border-spacing: 0;
 }
 
-
+h1{
+    font-size: 30px;
+    
+}
 
 h1 + h2 {
     color: red;
@@ -29,6 +32,10 @@ h1 + h2 {
        
    }
 
-   li:nth-child(1):hover::before{
+   li:nth-child(2n-1):hover::before{
     content:"Somos elementos impares";
+}
+
+li:nth-child(2n-2):hover::after{
+    content:"Somos elementos pares";
 }
