@@ -75,8 +75,9 @@ table {
   }
   
   div.caja2:hover{
-    transform: rotate(70deg);
+    transform: rotate(360deg);
    transition:1s;
+ 
   }
 
   div.caja3{
@@ -133,7 +134,7 @@ table {
   }
   
   div.caja9:hover{
-    transform: perspective(120px);
+    transform: perspective(150px) rotateX(45deg);
     transition: 1s;
    
   }
@@ -142,7 +143,8 @@ table {
   }
   
   div.caja10:hover{
-    transform: perspective(120px);
+    transform: perspective(150px) rotateY(45deg);
+    transition:1s;
   
   }
   div.caja11{
