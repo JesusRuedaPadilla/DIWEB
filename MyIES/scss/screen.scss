@@ -1,0 +1,45 @@
+$colorTexto:#eee;
+$colorTextoHover:#fff;
+$bgColorFondo:#666;
+$bgColorFondoHover:#888;
+
+
+@mixin coloresPrincipales {
+    color:$colorTexto;
+    background-color:$bgColorFondo;
+
+  }
+
+  @mixin coloresPrincipalesHover {
+    color:$colorTextoHover;
+    background-color: $bgColorFondoHover;
+    
+  }
+
+  @mixin BoxSizing ($box){
+    box-sizing: $box;
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+  }
+
+  @mixin Transiciones ($property,$duration,$timing:linear){
+    
+    transition: $property $duration $timing;
+    -webkit-transition:  $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    
+  }
+
+  @mixin Animaciones ($name, $duration ,$timing:linear){
+    animation:$name, $duration ,$timing;
+    -webkit-animation: $name, $duration ,$timing;
+    -moz-animation: $name, $duration ,$timing;
+  }
+
+  @import "_menu.scss";
+
+
+
+ 
+
+
