@@ -36,10 +36,31 @@ $bgColorFondoHover:#888;
     -moz-animation: $name, $duration ,$timing;
   }
 
+
   @import "_menu.scss";
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
 
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
- 
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+  @include coloresPrincipales;
+  @include BoxSizing(border-box);
 
+}
 
