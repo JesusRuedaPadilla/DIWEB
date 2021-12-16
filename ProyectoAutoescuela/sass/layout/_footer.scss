@@ -1,0 +1,29 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+footer{
+
+   @include ColorBGFooter;    
+   
+    .continente{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: flex-start;
+      height: 80px;
+      
+    }
+}
+
+div{
+  @include ColorFooter;
+  padding: 12px;
+
+    .cajaizq{
+      @include ColorFooter;
+      margin-top: 15px;
+      padding: 12px;
+
+    }
+}

@@ -1,0 +1,65 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/function";
+nav{
+
+
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        margin-top:auto;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: flex-start;
+        width: 100%;
+        @include ColorMenu;
+    }
+    
+    a {
+            @include ColorMenu;
+            padding: 7px 20px;
+            cursor: pointer;
+            width: 160px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                @include ColorMenuHover;
+                @include AnimacionesMenu(iluminar,0.4s);
+            
+              }
+          }
+    
+         
+          
+}
+
+
+
+li.categoria {
+    float: left;
+
+    > a {
+        @include TransicionLi(padding,0.4s);
+  
+      }
+      &:hover > a {
+        padding: 10px 20px;
+      }
+
+      &:hover ul.submenu {
+        height: 90px;
+      }
+
+  }
+
+.submenu {
+      display:flex;
+      flex-direction: column;
+      height: 0px;
+      overflow: hidden;
+      @include TransicionSubmenu(height,0.5s);   
+}
+    

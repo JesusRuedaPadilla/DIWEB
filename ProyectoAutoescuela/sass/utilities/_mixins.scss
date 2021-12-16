@@ -1,0 +1,65 @@
+@import "_variables.scss";
+
+
+@mixin ColorArticle {
+  
+    background-color: $bgcolor_principal_article;
+}
+
+@mixin ColorFooter {
+    color: $color_footer;
+
+
+}
+@mixin ColorBGFooter {
+
+    background-color: $bgcolor_footer; 
+
+}
+@mixin ColorHeader {
+    background-color: $bgcolor_header;
+}
+
+
+@mixin ColorMenuHover {
+    color: $color_menu_hover;
+    background-color: $bg_color_menu_hover;
+}
+@mixin ColorMenu {
+    color:$color_menu;
+    background-color:$bg_color_menu;
+}
+
+@mixin TransicionesMenu ($property,$duration,$timing:ease-out){
+   
+    transition: $property $duration $timing;
+    -webkit-transition:  $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    
+  }
+
+@mixin AnimacionesMenu ($property,$duration,$timing:linear){
+   
+    animation: $property $duration $timing;
+    -webkit-animation: $property $duration $timing;
+    -moz-animation: $property $duration $timing;
+    
+  }
+@mixin TransicionLi($property,$duration,$timing:ease-out) {
+    transition: $property $duration $timing;
+    -webkit-transition:$property $duration $timing;
+    -moz-transition:$property $duration $timing;
+}
+
+@mixin TransicionSubmenu($property,$duration,$timing:ease-out)
+ {
+    transition: $property $duration $timing;
+    -webkit-transition:$property $duration $timing;
+    -moz-transition:$property $duration $timing;
+}
+
+
+
+
+
+

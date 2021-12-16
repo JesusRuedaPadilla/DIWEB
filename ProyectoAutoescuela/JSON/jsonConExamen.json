@@ -1,0 +1,18 @@
+{
+
+    "codigoExamen":null,
+    "enunciado":null,
+    "numPreguntas":null,
+    "duracion":null,
+    "bancoPreguntas":[
+
+        {"id":27,
+        "tematica":"motor",
+        "enunciado":"ewrffetrwertg4erfweetrgfegr",
+        "recurso":"imagen/motor/"
+
+        }
+    ],
+    "preguntaIncluidas":[25,56,45,56]
+
+}

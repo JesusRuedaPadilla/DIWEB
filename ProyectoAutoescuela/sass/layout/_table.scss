@@ -1,0 +1,29 @@
+table{
+  
+    position: relative;
+    top: 120px;
+    border: 3px solid #0E6187;
+   width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  
+  }
+  
+  .filas{
+    border: 2px solid #0E6187;
+  }
+  .columnas{
+    padding: 25px 15px;
+    border: 2px solid #0E6187;
+    vertical-align: middle;
+    text-align: center;
+    
+  }
+  .columnas_cab{
+    background-color: gray;
+    padding: 25px 15px;
+    border: 2px solid #0E6187;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 900;
+  }
