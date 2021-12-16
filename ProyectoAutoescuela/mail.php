@@ -13,10 +13,10 @@ function mandaEmail($destino,$asunto,$mensaje) {
     $mail->Host       = "smtp.gmail.com";    
     $mail->Port       = 465;                 
     // introducir usuario de google
-    $mail->Username   = "jesus.rp163@gmail.com"; 
+    $mail->Username   = "jesus@gmail.com"; 
     // introducir clave
-    $mail->Password   = "goku9037";       
-    $mail->SetFrom('jesus.rp163@gmail.com', 'Autoescuela');
+    $mail->Password   = "";       
+    $mail->SetFrom('jesus@gmail.com', 'Autoescuela');
     // asunto
     $mail->Subject    = $asunto;
     // cuerpo
