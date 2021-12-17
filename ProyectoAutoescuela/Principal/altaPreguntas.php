@@ -169,8 +169,8 @@ function ValidateForm()
     <footer>
         <div class="continente">
             <div class="cajaizq">
-                <a href="">Guia de estilo</a><br>
-                <a href="">Mapa web del sitio</a>
+                <a href="../Guia/Guía de Estilos.pdf">Guia de estilo</a><br>
+                <a href="../MapaWeb/mapaWeb.php">Mapa web del sitio</a>
             </div>
 
             <div class="cajacent">

@@ -8,15 +8,6 @@ class Examenes {
     protected $num_preguntas;
     protected $activo;
 
-
-    public function set($dni){
-        $this-> $dni;
-    
-        
-    
-    }
-
-    
     
     public function getid() {return $this->id; }
     public function getemail() {return $this->email; }

@@ -18,7 +18,6 @@ if(isset($_POST['logout'])){
     header("Location:../Inicio.php");
 
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,13 +52,14 @@ if(isset($_POST['logout'])){
                     <a href="paginaUsuario.php">Usuarios</a>
                     <ul class="submenu">
                         <li><a href="altaUsuario.php">Alta Usuarios</a></li>
-                        <li><a href="#">Alta masiva usuarios</a></li>
+                        <li><a href="eliminarUsuario.php">Eliminacion Usuarios</a></li>
                     </ul>
                 </li>
                 <li class="categoria">
                     <a href="#">Tematicas</a>
                     <ul class="submenu">
                         <li><a href="altaTematicas.php">Alta temáticas</a></li>
+                        <li><a href="eliminaTematicas.php">Elimina Tematicas</a></li>
                     </ul>
                 </li>
                 <li class="categoria">
@@ -111,8 +111,8 @@ if(isset($_POST['logout'])){
     <footer>
         <div class="continente">
     <div class="cajaizq">
-        <a href="">Guia de estilo</a><br>
-        <a href="">Mapa web del sitio</a>
+        <a href="../Guia/Guía de Estilos.pdf">Guia de estilo</a><br>
+        <a href="../MapaWeb/mapaWeb.php">Mapa web del sitio</a>
 </div>
 
     <div class="cajacent">
@@ -130,3 +130,4 @@ if(isset($_POST['logout'])){
     </footer>
 </body>
 </html>
+

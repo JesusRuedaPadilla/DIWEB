@@ -3,7 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 function mandaEmail($destino,$asunto,$mensaje) {
 
-    require "./vendor/autoload.php";
+    require "../vendor/autoload.php";
     $mail = new PHPMailer();
     $mail->IsSMTP();
     // cambiar a 0 para no ver mensajes de error
@@ -13,10 +13,10 @@ function mandaEmail($destino,$asunto,$mensaje) {
     $mail->Host       = "smtp.gmail.com";    
     $mail->Port       = 465;                 
     // introducir usuario de google
-    $mail->Username   = "jesus@gmail.com"; 
+    $mail->Username   = "jesus.rp163@gmail.com"; 
     // introducir clave
     $mail->Password   = "";       
-    $mail->SetFrom('jesus@gmail.com', 'Autoescuela');
+    $mail->SetFrom('jesus.rp163@gmail.com', 'Autoescuela');
     // asunto
     $mail->Subject    = $asunto;
     // cuerpo

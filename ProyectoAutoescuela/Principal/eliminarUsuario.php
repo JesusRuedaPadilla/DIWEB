@@ -1,25 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario</title>
-    <script src="https://kit.fontawesome.com/f4af5b899a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../favicon.ico">
+<?php
+    include_once "../BD/GBDatos.php";
 
-</head>
+
+    if(GBDatos::IniciaConex()){
+
+    if(isset($_POST['correo'])){
+
+        $correo=$_POST['correo'];
+
+        if(isset($_POST['Enviar'])){
+
+            if(GBDatos::existeCorreo($correo)){
+            
+                GBDatos::EliminaUsuario($correo);
+
+        }
+        else{
+            echo "El correo que ha escrito no esta registrado en nuestra pagina.";
+        }
+    }
+    }
+}
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <title>Alta Usuario</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="favicon/favicon1.ico">
+  <script src="https://kit.fontawesome.com/f4af5b899a.js" crossorigin="anonymous"></script>
+  </head>
+
 <body>
-    <header>
+<header>
         <nav id="imgPrincipal">
             <img src="../imagenes/autoescuela.png">
         </nav>
 
         <nav id="navIcono">
         <i class="fas fa-user"></i>
-        <form action='altaTematicas.php' method='post'>
-
+        <form action='altaUsuario.php' method='post'>
             <input id="logout" type='submit' name='logout' value='Cerrar Sesion'/>
         </form>
         </nav>
@@ -37,7 +60,7 @@
                 <li class="categoria">
                     <a href="#">Tematicas</a>
                     <ul class="submenu">
-                        <li><a href="#">Alta temáticas</a></li>
+                        <li><a href="altaTematicas.php">Alta temáticas</a></li>
                     </ul>
                 </li>
                 <li class="categoria">
@@ -58,25 +81,15 @@
         </nav>
 
     </header>
-
     <article>
- 
         <section>
-            <form action='altaTematicas.php' method='post'>
-    
-               
-                    <label for='tema' >Temática:</label><br/>
-                    <input type='text' name='tema' id='tema' maxlength="50" /><br/>
-                
-                
-          
-            <input type='submit' name='enviar' value='Aceptar'/><br/>
-       
-            </form>
+        <form action="" method="post">
+        <p>Correo a eliminar</p>
+        <input type="text" name="correo" id="correo">
+        <input type="submit" name="Enviar" value="Enviar">
+    </form>
 
-       
         </section>
-    
     </article>
     <footer>
         <div class="continente">
@@ -95,43 +108,9 @@
         Contacto<br>
         Telefono: 953845624<br>
         Email: jijihaha@gmail.com
-</div>
+    </div>
 </div> 
+
     </footer>
 </body>
 </html>
-<?php
-require_once "../BD/Sesion.php";
-require_once "../BD/Usuario.php";
-require_once "../BD/Login.php";
-require_once "../BD/GBDatos.php";
-
-Sesion::init();
-
-if(isset($_POST['logout'])){
-
-    Sesion::destruir();
-    header("Location:../Inicio.php");
-}
-if (isset($_POST['enviar']))
-{
-    
-    $tema = $_POST['tema'];
-    
-    $activo=0;
-
-    if(GBDatos:: IniciaConex()){
-    
-           
-        if(GBDatos::existeTematicas($tema)!=1){
-            GBDatos::InsertarTematica($tema);
-            
-        }
-        else if(GBDatos::existeTematicas($tema)){
-            echo "<section class='Error'>Error Tematica ya existente</section>";
-        }
-        
-    }
-
-}
-?>

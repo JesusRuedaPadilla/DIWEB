@@ -9,15 +9,6 @@ class Examen_Terminado {
     protected $calificacion;
     protected $ejecucion;
 
-
-    // public function set($dni){
-    //     $this-> $dni;
-    
-        
-    
-    // }
-
-
     
     public function getidExamen() {return $this->id_examen; }
     public function getidUsuarios() {return $this->id_usuarios; }

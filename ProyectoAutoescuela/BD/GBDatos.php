@@ -93,14 +93,24 @@ class GBDatos{
             return $JSON;
         
         }
-        public static function existeTematicas($tema)
-        {        
-            $sql="SELECT `tema` FROM `tematica` WHERE `tema` like '$tema'"; 
+
+        public static function ExisteTematica($tematica)
+        {
+    
+            $sql="SELECT * FROM tematica WHERE tema like '$tematica'"; 
             $resultado = self::$conex->query($sql);
             $count = $resultado->rowCount();
             return $count==1;
-            
+                         
         }
+        // public static function existeTematicas($tema)
+        // {        
+        //     $sql="SELECT `tema` FROM `tematica` WHERE `tema` like '$tema'"; 
+        //     $resultado = self::$conex->query($sql);
+        //     $count = $resultado->rowCount();
+        //     return $count==1;
+            
+        // }
 
 
         public static function InsertarUsuario($correo,$nombre,$apellidos,$fecha_nac,$contrasena,$Rol,$hash)
@@ -135,6 +145,38 @@ class GBDatos{
         
                 $res->bindParam(1,$hash);
                 $res->bindParam(2,$correo);
+                       
+          
+              
+                $res->execute();
+                    
+        }
+
+        public static function EliminaUsuario($correo)
+        {
+            // echo "correo:".$correo."<br>"."nombre:".$nombre."<br>"."apellidos:".$apellidos."<br>"."fecha:".$fecha_nac;
+            
+            $sql="DELETE FROM `usuarios` WHERE `correo` like ?";
+            $res= self::$conex->prepare($sql);
+        
+              
+                $res->bindParam(1,$correo);
+                       
+          
+              
+                $res->execute();
+                    
+        }
+
+        public static function EliminaTematica($tematica)
+        {
+            // echo "correo:".$correo."<br>"."nombre:".$nombre."<br>"."apellidos:".$apellidos."<br>"."fecha:".$fecha_nac;
+            
+            $sql="DELETE FROM `tematica` WHERE `tema` like ?";
+            $res= self::$conex->prepare($sql);
+        
+              
+                $res->bindParam(1,$tematica);
                        
           
               
