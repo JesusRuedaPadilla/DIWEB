@@ -74,7 +74,7 @@ require_once "./BD/GBDatos.php";
         
             <input type="checkbox" name="recuerdame" value="recuerdame"> Recuerdame
       
-           <a href="">¿Has olvidado tu contraseña?</a><br/>
+           <a href="olvidaContraseña.php">¿Has olvidado tu contraseña?</a><br/>
      
     
               

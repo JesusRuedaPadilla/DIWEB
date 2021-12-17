@@ -55,7 +55,7 @@ require_once "../mail.php";
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   
   <title>Alta Usuario</title>
-  <link rel="stylesheet" href="../css/paginaPrincipal.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="shortcut icon" href="favicon/favicon1.ico">
   <script src="https://kit.fontawesome.com/f4af5b899a.js" crossorigin="anonymous"></script>
   </head>

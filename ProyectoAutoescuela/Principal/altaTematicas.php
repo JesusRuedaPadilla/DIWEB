@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario</title>
     <script src="https://kit.fontawesome.com/f4af5b899a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/paginaPrincipal.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../favicon.ico">
 
 </head>

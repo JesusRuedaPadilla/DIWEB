@@ -47,7 +47,7 @@ require_once "../mail.php";
   <title>Alta Usuario</title>
   <link rel="stylesheet" href="css/paginaPrincipal.css">
   <script src="https://kit.fontawesome.com/f4af5b899a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/paginaPrincipal.css">
+  <link rel="stylesheet" href="../css/main.css">
   </head>
 
 <body>
@@ -69,7 +69,7 @@ require_once "../mail.php";
             <ul>
                 
                 <li class="categoria">
-                    <a href="./Principal/paginaUsuario.php">Usuarios</a>
+                    <a href="paginaUsuario.php">Usuarios</a>
                     <ul class="submenu">
                         <li><a href="altaUsuario.php">Alta Usuarios</a></li>
                         <li><a href="#">Alta masiva usuarios</a></li>
@@ -78,13 +78,13 @@ require_once "../mail.php";
                 <li class="categoria">
                     <a href="#">Tematicas</a>
                     <ul class="submenu">
-                        <li><a href="./Principal/altaTematicas.php">Alta temáticas</a></li>
+                        <li><a href="altaTematicas.php">Alta temáticas</a></li>
                     </ul>
                 </li>
                 <li class="categoria">
                     <a href="#">Preguntas</a>
                     <ul class="submenu">
-                        <li><a href="#">Alta preguntas</a></li>
+                        <li><a href="altaPreguntas.php">Alta preguntas</a></li>
                         <li><a href="#">Alta masiva Preguntas</a></li>
                     </ul>
                 </li>

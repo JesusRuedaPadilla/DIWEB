@@ -47,7 +47,7 @@ class GBDatos{
 
         public static function deleteHash($hash){
 
-            $sql="UPDATE `usuarios` SET `hash`='0' WHERE `hash` LIKE ?";
+            $sql="UPDATE `usuarios` SET `hash`=NULL WHERE `hash` LIKE ?";
             $resultado = self::$conex->prepare($sql);
             $resultado->bindParam(1,$hash);
             $resultado->execute();
@@ -58,6 +58,16 @@ class GBDatos{
         {
     
             $sql="SELECT * FROM usuarios WHERE correo like '$correo' and contrasena like '$contrasena'"; 
+            $resultado = self::$conex->query($sql);
+            $count = $resultado->rowCount();
+            return $count==1;
+                         
+        }
+
+        public static function existeCorreo($correo)
+        {
+    
+            $sql="SELECT * FROM usuarios WHERE correo like '$correo'"; 
             $resultado = self::$conex->query($sql);
             $count = $resultado->rowCount();
             return $count==1;
@@ -114,6 +124,24 @@ class GBDatos{
                 $res->execute();
             }        
         }
+
+        
+        public static function InsertarHASH($correo,$hash)
+        {
+            // echo "correo:".$correo."<br>"."nombre:".$nombre."<br>"."apellidos:".$apellidos."<br>"."fecha:".$fecha_nac;
+            
+            $sql="UPDATE `usuarios` SET `hash`=? WHERE `correo` LIKE ?";
+            $res= self::$conex->prepare($sql);
+        
+                $res->bindParam(1,$hash);
+                $res->bindParam(2,$correo);
+                       
+          
+              
+                $res->execute();
+                    
+        }
+
 
         public static function InsertarTematica($tema)
         {            
