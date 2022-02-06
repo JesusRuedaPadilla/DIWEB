@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  color: #666666;
+  font-family: "Montserrat";
+  margin: 20px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto;
+}
+.content_wrapper {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  /* grid-template-rows: 200px 75px; */
+}
+

@@ -1,0 +1,31 @@
+#verde{
+   color: #29FE2F;
+    border: 12px solid ;
+}
+
+#rojo{
+    /* background-color: red; */
+    color: red;
+    border: 200px solid ;
+}
+
+#rosa{
+    /* background-color: red; */
+    color: pink;
+    border: 20px solid ;
+}
+#rosa{
+    /* background-color: red; */
+    color: #FD29FD;
+    border: 20px solid ;
+}
+
+.amarillo{
+    color: #FE9A5D;
+    border: 20px solid ;
+}
+
+.azul{
+    color: #0B24FB;
+    border: 20px solid ;
+}
